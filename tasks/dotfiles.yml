@@ -4,6 +4,7 @@
     - install
     - dotfiles
     - stow
+###TODO: 
 - name: Cloning .dotfiles
   ansible.builtin.git:
     repo: 'git@github.com:ThePrimeagen/.dotfiles.git'
