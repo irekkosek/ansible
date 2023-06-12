@@ -9,6 +9,7 @@
     - personal-project
 - name: Personal Project Harpoon
   ansible.builtin.git:
+    accept_hostkey: yes
     repo: 'git@github.com:ThePrimeagen/harpoon.git'
     bare: true
     dest: "{{ personal }}/harpoon"
