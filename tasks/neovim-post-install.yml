@@ -39,11 +39,11 @@
   - ubuntu
   - neovim-post
 
-- name: Ensure fzf native plugin built
-  shell: cd {{ lookup('env', 'HOME') }}/.local/share/nvim/plugged/telescope-fzf-native.nvim && make
-  tags:
-  - ubuntu
-  - neovim-post
+    #- name: Ensure fzf native plugin built
+  #shell: cd {{ lookup('env', 'HOME') }}/.local/share/nvim/plugged/telescope-fzf-native.nvim && make
+    #tags:
+    #- ubuntu
+    #  - neovim-post
 
 # - name: Ensure Treesitter installed
 #   shell: nvim --headless +'TSUpdateSync' +qall
