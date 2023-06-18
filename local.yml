@@ -20,13 +20,15 @@
     - include: tasks/node-setup.yml
     - include: tasks/npm-packages.yml
     - include: tasks/zsh-setup.yml
-    - include: tasks/slack-setup.yml
-    - include: tasks/personal-projects.yml
-    - include: tasks/nvim-setup.yml
-    - include: tasks/neovim-post-install.yml
-    - include: tasks/brave.yml
+    # - include: tasks/slack-setup.yml
+    # - include: tasks/personal-projects.yml
+    # - include: tasks/nvim-setup.yml
+    # - include: tasks/neovim-compile.yml
+    # - include: tasks/neovim-install.yml
+    # - include: tasks/neovim-post-install.yml
+    # - include: tasks/brave.yml
     - include: tasks/debugger.yml
-    - include: tasks/dotfiles.yml
-    - include: tasks/productivity-tools.yml
+    # - include: tasks/dotfiles.yml
+    # - include: tasks/productivity-tools.yml
     - include: tasks/lsp.yml
 

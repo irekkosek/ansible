@@ -6,6 +6,7 @@
   - ubuntu
   - neovim-post
   - neovim-clean
+  - dotfiles
 
 - name: Remove Plugins
   file:
@@ -15,6 +16,7 @@
   - ubuntu
   - neovim-post
   - neovim-clean
+  - dotfiles
 
 - name: Remove Vim-Plug
   file:
@@ -24,12 +26,14 @@
   - ubuntu
   - neovim-post
   - neovim-clean
+  - dotfiles
 
 - name: Install Vim-Plug
   shell: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   tags:
   - ubuntu
   - neovim-post
+  - dotfiles
 
 # Run after dotfiles are in place to ensure nvim binary is in path and the vim config file is in place
 # Without PlugUpdate helptags seem to be missed
@@ -38,6 +42,7 @@
   tags:
   - ubuntu
   - neovim-post
+  - dotfiles
 
     #- name: Ensure fzf native plugin built
   #shell: cd {{ lookup('env', 'HOME') }}/.local/share/nvim/plugged/telescope-fzf-native.nvim && make
